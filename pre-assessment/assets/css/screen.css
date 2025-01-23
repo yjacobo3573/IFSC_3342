@@ -25,12 +25,12 @@ body {
   margin-top: 20px;
   border: 1px solid #ccc;
 }
-
-#header h1 a {
+#header {
   /*Hide the text*/
-
-  background-image: url("../resources/header-image.jpg");
+  background-image: url("../resources/header-img.jpg");
   background-size: cover;
+}
+#header h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;

@@ -25,10 +25,17 @@ body {
   margin-top: 20px;
   border: 1px solid #ccc;
 }
-#header {
-}
+
 #header h1 a {
+  /*Hide the text*/
+
+  background-image: url("../resources/header-image.jpg");
+  background-size: cover;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
+
 #nav {
   background-color: #000;
 }
@@ -67,14 +74,46 @@ body {
   margin-top: 5px;
   margin-bottom: 15px;
 }
+
+#content .alert {
+  background-color: coral;
+  color: #00008b;
+}
+
+#content h2 {
+  color: #ed2926;
+}
+
+#content h3 {
+  color: #bd262f;
+}
+
+#content h4 {
+  color: #7b2e36;
+}
+
+dt {
+  font-weight: bold;
+}
+.favoriteLink {
+  color: #82c8e5;
+}
+.favoriteLink:hover {
+  color: #001861;
+}
 #footer {
   background-color: #000;
   color: #fff;
   height: 25px;
+}
+
+#footer a {
+  color: #fff;
 }
 #footer h6 {
   font-size: 12px;
   line-height: 25px;
   margin-right: 20px;
   margin-left: 20px;
+  text-align: center;
 }

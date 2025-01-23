@@ -25,18 +25,17 @@ body {
   margin-top: 20px;
   border: 1px solid #ccc;
 }
-#header {
-  background-image: url("../resources/header-img.jpg");
-  background-size: cover;
-  align-items: center;
-}
+
 #header h1 a {
+  width: 800px;
+  height: 140px;
   /*Hide the text*/
+  background-image: url("../resources/header-img.jpg");
+
+  display: block;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  display: inline-block;
-  text-align: center;
 }
 
 #nav {
@@ -76,6 +75,7 @@ body {
 #content p {
   margin-top: 5px;
   margin-bottom: 15px;
+  overflow: hidden; /*study*/
 }
 
 #content .alert {
@@ -97,8 +97,8 @@ body {
 
 #content .float-img {
   float: right;
-  border: 2px solid #000;
-  margin: 0.5px;
+  border: 9px solid #000;
+  margin: 3px;
 }
 dt {
   font-weight: bold;

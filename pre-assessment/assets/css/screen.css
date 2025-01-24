@@ -118,9 +118,13 @@ dt {
   color: #fff;
   height: 25px;
 }
-
+.symbol-no-underline{
+  text-decoration: none;
+}
 #footer a {
   color: #fff;
+  
+
 }
 #footer h6 {
   font-size: 12px;

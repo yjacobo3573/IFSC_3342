@@ -27,11 +27,14 @@ body {
 }
 
 #header h1 a {
+  /*size of image */
   width: 800px;
   height: 140px;
-  /*Hide the text*/
-  background-image: url("../resources/header-img.jpg");
 
+  /*url*/
+  background-image: url("../resources/header-image-name.jpg");
+
+  /*Hide the text*/
   display: block;
   text-indent: 100%;
   white-space: nowrap;
@@ -76,7 +79,7 @@ body {
 #content p {
   margin-top: 5px;
   margin-bottom: 15px;
-  overflow: hidden; /*study*/
+  overflow: hidden;
 }
 
 #content .alert {

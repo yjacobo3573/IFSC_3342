@@ -1,0 +1,9 @@
+body{
+    background-image: url("CoverImg.png");
+    background-size:cover;
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    width: 100%;
+    
+    height: 100vh;
+}

@@ -27,10 +27,11 @@ body {
 }
 
 #header h1 a {
-  /*size of image */
-  width: 800px;
-  height: 140px;
-
+   /* Make the image responsive */
+   width: 100%;
+   max-width: 800px;
+   height: 140px;
+   
   /*url*/
   background-image: url("../resources/header-image-name.jpg");
 

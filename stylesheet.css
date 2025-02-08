@@ -1,18 +1,41 @@
 
-
-
+.lobster-regular {
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+  }
+  
+body{
+    background-color: #f1bd81;
+}
 
 
 
  #container {
-    width:80vw;  
+    width:54vw;  
     height:100vh;
     border:2px solid #ccc; 
     margin:50px auto; 
-    padding:30px;
-    background-image: url("cover-image.png");
+    padding:60px;
+    background-image: url("portfolio-img.png");
     background-size:cover;
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling */
+    text-align: center;
    
+}
+
+h1{
+    color: #154f94;
+    text-shadow: #f1bd81 1.6px 1.6px;
+}
+ul{
+    list-style-type: none;
+    
+}
+
+a{
+    font-size: 1.5rem;
+    color: #154f94;
 }

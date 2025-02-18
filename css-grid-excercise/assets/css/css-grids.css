@@ -1,7 +1,92 @@
-
-
-
-
-main{
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  .cf:before,
+  .cf:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+  
+  .cf:after {
+      clear: both;
+  }
+  
+  main{
+  width:80vw;  
+  display:grid;
+  grid-template-columns: repeat(10, [col-] 1fr);
+  grid-template-rows:auto;  
+  margin:auto;  
+  gap:20px;
+  border:1px solid #000;
+  padding:20px;  
+  }
+  
+  header.primary{
+    background: rgba(0, 0, 0, 0.4);
+    grid-column: 1 / 11;
+    grid-row: 1 / 2;
+  }
+  
+  #content{
+    grid-column: 1 / 11;
+    grid-row: 2 / 3;
+    display:grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+  }
+  
+  footer.primary{
+    background: rgba(0, 0, 0, 0.4);
+    grid-column: 1 / 11;
+    grid-row: 3 / 4;
+  }
+  
+  #blog{
+    background: rgba(0, 0, 0, 0.6);
+    grid-column:1 / 8;
+  }
+  
+  aside{
+    background: rgba(0, 0, 0, 0.3);
+    grid-column:8 / 11;
+  }
+  
+  /*
+  
+  @media screen and (min-width:400px){
+    main{
+      background:purple;
+      width:30vw;
+    }
+    main > *{
+    float:none;  
+    }
+  }
     
-}
+  
+  
+  @media screen and (min-width:800px){
+    main{
+      background:green;
+      width:50vw;
+    }
+  }
+  
+  @media screen and (min-width:1000px){
+    main{
+      background:red;
+      width:70vw;
+    }
+    
+  }
+  
+  
+  */

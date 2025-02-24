@@ -49,3 +49,9 @@ a{
         font-size: 1rem;
     }
 }
+
+@media(min-width:800px){
+    a{
+        text-shadow: #f1bd81 1px 1px;
+    }
+}

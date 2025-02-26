@@ -1,3 +1,20 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+  }
+  
+
 
 .lobster-regular {
     font-family: "Lobster", serif;
@@ -13,7 +30,8 @@ body{
 
 
  #container {
-    width:54vw;  
+    max-width:960px;
+    width:60vw;  
     height:100vh;
     border:2px solid #ccc; 
     margin:50px auto; 

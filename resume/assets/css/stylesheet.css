@@ -12,7 +12,10 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  
+  *{
+    margin:0;
+    padding:0;
+  }
 /*----Typography----*/
 body{
    font-family: "Open Sans", sans-serif;
@@ -44,6 +47,14 @@ body{
 .headings{
   color:var(--header-color);
    
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align:center;
 }
 
 nav{
@@ -95,7 +106,27 @@ dd{
   border-bottom: 2px solid var(--accent-color);
 }
 img{
-  border-radius: 50%;
+  border-radius: 60%;
 }
+
+ section.social-info{
+max-width:420px;
+margin: 0 auto;
+
+}
+
+section.social-info ul{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* ul has default padding and margin remember   */
+  margin:0;
+  padding:0;
+}
+
+section.social-info ul li{
+  list-style:none;
+} 
+
 
 

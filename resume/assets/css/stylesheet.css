@@ -1,3 +1,11 @@
+/*CSS Custom Properties */
+:root{
+  --main-bg-color: #ebf9ed;
+  --header-color: #713600;
+  --accent-color: #fd7962;
+}
+
+/*----Box Sizing ----*/
 html {
     box-sizing: border-box;
   }
@@ -5,7 +13,85 @@ html {
     box-sizing: inherit;
   }
   
+/*----Typography----*/
+body{
+   font-family: "Open Sans", sans-serif;
+}
   
 
   
+  /* ------ Fluid Images -------*/
+
+img {
+  max-width: 100%;
+}
+
+/*----Utility Classes---*/
+.container{
+  max-width:420px;
+  margin: 0 auto;
+  padding:20px;
+  background: var(--main-bg-color);
+}
+
+/*---Global Styles -----*/
+body{
+  line-height:1.9em;
   
+}
+
+
+.headings{
+  color:var(--header-color);
+   
+}
+
+nav{
+  padding:1px;
+}
+nav ul {
+  display:flex;
+  flex-direction:row;
+  margin-left:-40px;
+}
+
+nav li{
+  padding:15px 15px 15px 15px;
+
+  list-style:none;
+  background-color: var(--accent-color);
+}
+
+nav ul li a{
+  text-decoration:none;
+  color: var(--header-color);
+  font-weight:bold;
+}
+
+.border-bottom-line{
+  border-bottom: 2px solid var(--accent-color);
+ 
+}
+
+dl{
+  display:grid;
+  grid-template: repeat(8, auto) / 8em 1fr;
+  grid-gap: 0.9rem;
+}
+
+dt{
+  font-weight:bold;
+  grid-column:1;
+  padding:10px 0;
+  border-bottom: #713600 1px solid;
+ 
+}
+
+dd{
+  grid-column: 2;
+  padding:10px 0;
+  border-bottom: #713600 1px solid;
+}
+
+
+

@@ -70,28 +70,32 @@ nav ul li a{
 
 .border-bottom-line{
   border-bottom: 2px solid var(--accent-color);
- 
+  padding:10px;
 }
 
 dl{
   display:grid;
+  /*Defines rows and columns*/
   grid-template: repeat(8, auto) / 8em 1fr;
-  grid-gap: 0.9rem;
+  font-size:0.9rem;
 }
 
 dt{
   font-weight:bold;
   grid-column:1;
   padding:10px 0;
-  border-bottom: #713600 1px solid;
+  border-bottom: 2px solid var(--accent-color);
  
 }
 
 dd{
+  margin:0;
   grid-column: 2;
   padding:10px 0;
-  border-bottom: #713600 1px solid;
+  border-bottom: 2px solid var(--accent-color);
 }
-
+img{
+  border-radius: 50%;
+}
 
 

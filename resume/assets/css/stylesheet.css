@@ -18,7 +18,9 @@ html {
   }
 /*----Typography----*/
 body{
-   font-family: "Open Sans", sans-serif;
+   
+   font-family: "Montserrat", sans-serif;
+   font-style: normal;
 }
   
 
@@ -51,32 +53,51 @@ body{
 
 h1{
   text-align: center;
+  
 }
 
 h2{
   text-align:center;
+  margin-top:20px;
+}
+
+h4{
+  text-align:center;
+  margin-top:15px;
 }
 
 nav{
-  padding:1px;
+  margin:0 auto;
+  padding:10px;
+  max-width:410px;
+  background-color: var(--accent-color);
 }
 nav ul {
   display:flex;
   flex-direction:row;
-  margin-left:-40px;
+  justify-content:space-around;
+ 
 }
 
 nav li{
-  padding:15px 15px 15px 15px;
-
   list-style:none;
   background-color: var(--accent-color);
+  padding:10px;
 }
 
 nav ul li a{
   text-decoration:none;
-  color: var(--header-color);
+  color: black;
   font-weight:bold;
+  padding: 2px;
+ 
+}
+
+nav ul li a:hover{
+  background-color: #f9f9f9;
+  color: var(--accent-color);
+  border-radius: 30%;
+
 }
 
 .border-bottom-line{
@@ -105,13 +126,16 @@ dd{
   padding:10px 0;
   border-bottom: 2px solid var(--accent-color);
 }
+
+
 img{
-  border-radius: 60%;
+  border-radius: 80%;
 }
 
  section.social-info{
-max-width:420px;
-margin: 0 auto;
+  max-width:410px;
+  margin:20px auto;
+  padding:20px;
 
 }
 
@@ -120,13 +144,53 @@ section.social-info ul{
   flex-direction: row;
   justify-content: space-around;
   /* ul has default padding and margin remember   */
-  margin:0;
-  padding:0;
+  
 }
 
 section.social-info ul li{
   list-style:none;
 } 
 
+section.social-info ul li a{
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+  padding: 10.5px 10px;
+  border-radius: 30px;
+  background-color: var(--accent-color);
+}
 
+section.social-info ul li a:hover{
+  background-color: #f9f9f9;
+  color: var(--accent-color);
+}
+
+ section#skills{
+  
+ 
+  padding:20px;
+}
+
+section#experience{
+
+  padding:20px;
+}
+
+section#education{
+  
+  padding:20px;
+}
+
+footer{
+  max-width:420px;
+  margin: 0 auto;
+  text-align: center;
+  padding:20px;
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+}
+
+footer a{
+  color:#fff;
+}
 

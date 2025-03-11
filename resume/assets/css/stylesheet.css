@@ -11,11 +11,11 @@ html {
   }
   *, *:before, *:after {
     box-sizing: inherit;
-  }
-  *{
     margin:0;
     padding:0;
   }
+  
+
 /*----Typography----*/
 body{
    
@@ -46,6 +46,7 @@ body{
 }
 
 
+
 .headings{
   color:var(--header-color);
    
@@ -68,9 +69,10 @@ h4{
 
 nav{
   margin:0 auto;
-  padding:10px;
   max-width:410px;
   background-color: var(--accent-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 nav ul {
   display:flex;
@@ -82,21 +84,27 @@ nav ul {
 nav li{
   list-style:none;
   background-color: var(--accent-color);
-  padding:10px;
+  
+}
+
+.side-border{
+  border-right: 4px solid black;
 }
 
 nav ul li a{
   text-decoration:none;
-  color: black;
+  color: #fff;
   font-weight:bold;
-  padding: 2px;
- 
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 nav ul li a:hover{
-  background-color: #f9f9f9;
+  background-color: #fff;
   color: var(--accent-color);
-  border-radius: 30%;
+ 
 
 }
 
@@ -128,7 +136,7 @@ dd{
 }
 
 
-img{
+img.headShotImg{
   border-radius: 80%;
 }
 
@@ -153,7 +161,7 @@ section.social-info ul li{
 
 section.social-info ul li a{
   text-decoration:none;
-  color:black;
+  color:#FFF;
   font-weight:bold;
   padding: 10.5px 10px;
   border-radius: 30px;
@@ -176,6 +184,10 @@ section#experience{
   padding:20px;
 }
 
+section#experience a{
+  color:var(--accent-color);
+  
+}
 section#education{
   
   padding:20px;
@@ -192,5 +204,6 @@ footer{
 
 footer a{
   color:#fff;
+  
 }
 

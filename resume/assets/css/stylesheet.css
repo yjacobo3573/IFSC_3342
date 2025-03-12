@@ -49,12 +49,13 @@ body{
 
 .headings{
   color:var(--header-color);
-   
+  
 }
 
 h1{
   text-align: center;
-  
+  text-shadow: var(--accent-color) 1.6px 1.6px;
+
 }
 
 h2{
@@ -69,7 +70,6 @@ h4{
 
 nav{
   margin:0 auto;
-  max-width:410px;
   background-color: var(--accent-color);
   padding-top: 10px;
   padding-bottom: 10px;
@@ -141,7 +141,7 @@ img.headShotImg{
 }
 
  section.social-info{
-  max-width:410px;
+  
   margin:20px auto;
   padding:20px;
 
@@ -175,7 +175,6 @@ section.social-info ul li a:hover{
 
  section#skills{
   
- 
   padding:20px;
 }
 

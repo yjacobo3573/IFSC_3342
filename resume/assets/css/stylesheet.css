@@ -73,11 +73,13 @@ nav{
   background-color: var(--accent-color);
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top:10px;
 }
 nav ul {
   display:flex;
   flex-direction:row;
   justify-content:space-around;
+  
  
 }
 
@@ -138,6 +140,7 @@ dd{
 
 img.headShotImg{
   border-radius: 80%;
+  margin-top:20px;
 }
 
  section.social-info{
@@ -173,9 +176,11 @@ section.social-info ul li a:hover{
   color: var(--accent-color);
 }
 
+
  section#skills{
   
   padding:20px;
+
 }
 
 section#experience{
@@ -204,5 +209,12 @@ footer{
 footer a{
   color:#fff;
   
+}
+
+
+@media screen and (min-width:768px){
+  main.container{
+    max-width:900px;
+  }
 }
 

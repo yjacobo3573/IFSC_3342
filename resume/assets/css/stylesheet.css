@@ -25,14 +25,10 @@ body{
   
 
   
-  /* ------ Fluid Images -------*/
-
-img {
-  max-width: 100%;
-}
+  
 
 /*----Utility Classes---*/
-.container{
+main.container{
   max-width:420px;
   margin: 0 auto;
   padding:20px;
@@ -63,44 +59,36 @@ h2{
   margin-top:20px;
 }
 
-h4{
-  text-align:center;
-  margin-top:15px;
-}
 
-nav{
-  margin:0 auto;
-  background-color: var(--accent-color);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top:10px;
-}
+
+
+
 nav ul {
-  display:flex;
-  flex-direction:row;
-  justify-content:space-around;
-  
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
  
 }
 
 nav li{
-  list-style:none;
-  background-color: var(--accent-color);
-  
+  list-style-type:none;
 }
 
 .side-border{
   border-right: 4px solid black;
 }
 
-nav ul li a{
+nav ul li a:link, nav ul li a:visited{
+  display: block;
+  border:1px solid #000;
+  padding: 8px;
   text-decoration:none;
+  font-size:0.9em;
   color: #fff;
+  text-align:center;
   font-weight:bold;
-  padding-top:10px;
-  padding-bottom:10px;
-  padding-right: 5px;
-  padding-left: 5px;
+  background-color: var(--accent-color);
+  transition: background-color 0.6s ease;
+  
 }
 
 nav ul li a:hover{
@@ -115,11 +103,17 @@ nav ul li a:hover{
   padding:10px;
 }
 
+p.bio-summary{
+  padding:20px;
+  }
+
+
 dl{
   display:grid;
   /*Defines rows and columns*/
   grid-template: repeat(8, auto) / 8em 1fr;
   font-size:0.9rem;
+  padding:20px;
 }
 
 dt{
@@ -131,7 +125,7 @@ dt{
 }
 
 dd{
-  margin:0;
+  
   grid-column: 2;
   padding:10px 0;
   border-bottom: 2px solid var(--accent-color);
@@ -140,8 +134,16 @@ dd{
 
 img.headShotImg{
   border-radius: 80%;
-  margin-top:20px;
+  max-width: 100%;
+  margin: 20px auto;
+  display: block;
+  
 }
+
+#about{
+  margin-top: 20px;
+}
+
 
  section.social-info{
   
@@ -198,10 +200,10 @@ section#education{
 }
 
 footer{
-  max-width:420px;
+ 
   margin: 0 auto;
   text-align: center;
-  padding:20px;
+ 
   background-color: var(--accent-color);
   color: var(--main-bg-color);
 }
@@ -212,9 +214,30 @@ footer a{
 }
 
 
+/*----Media Queries----*/
+
+
+
 @media screen and (min-width:768px){
   main.container{
     max-width:900px;
   }
+  #about {
+    display: grid;
+    grid-template-columns: 2.5fr 3fr;
+    grid-template-areas:
+    "bio-summary details";
+    
+    
+  }
+
+  .bio-summary{
+    grid-area:bio-summary;
+  }
+  
+  .details{
+    grid-area:details;
+  }
+  
 }
 

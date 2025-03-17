@@ -177,6 +177,7 @@ section.social-info ul li a{
   padding: 10.5px 10px;
   border-radius: 30px;
   background-color: var(--accent-color);
+  transition: background-color 0.6s ease;
 }
 
 section.social-info ul li a:hover{

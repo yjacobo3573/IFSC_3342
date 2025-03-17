@@ -182,12 +182,13 @@ section.social-info ul li a:hover{
  section#skills{
   
   padding:20px;
-
+  
 }
 
 section#experience{
 
   padding:20px;
+ 
 }
 
 section#experience a{
@@ -197,6 +198,7 @@ section#experience a{
 section#education{
   
   padding:20px;
+ 
 }
 
 footer{
@@ -237,6 +239,24 @@ footer a{
   
   .details{
     grid-area:details;
+  }
+
+  #professional-stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "skills experience"
+    "skills education";
+  }
+
+  #skills{
+    grid-area:skills;
+  }
+  #experience{
+    grid-area:experience;
+  }
+  #education{
+    grid-area:education;
   }
   
 }

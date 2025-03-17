@@ -21,6 +21,7 @@ body{
    
    font-family: "Montserrat", sans-serif;
    font-style: normal;
+  
 }
   
 
@@ -48,20 +49,25 @@ body{
   
 }
 
+
+
+#leave-pattern{
+  max-width: 100%;
+  display:block;
+  
+}
+
 h1{
   text-align: center;
   text-shadow: var(--accent-color) 1.6px 1.6px;
-
+  margin-top:20px;
+  font-style: italic;
 }
 
 h2{
   text-align:center;
   margin-top:20px;
 }
-
-
-
-
 
 nav ul {
   display:grid;
@@ -134,7 +140,7 @@ dd{
 
 img.headShotImg{
   border-radius: 80%;
-  max-width: 100%;
+  max-width: 90%;
   margin: 20px auto;
   display: block;
   
@@ -145,7 +151,7 @@ img.headShotImg{
 }
 
 
- section.social-info{
+section.social-info{
   
   margin:20px auto;
   padding:20px;
@@ -191,10 +197,7 @@ section#experience{
  
 }
 
-section#experience a{
-  color:var(--accent-color);
-  
-}
+
 section#education{
   
   padding:20px;
@@ -202,10 +205,10 @@ section#education{
 }
 
 footer{
- 
+  max-width: 420px;
   margin: 0 auto;
+  padding:10px;
   text-align: center;
- 
   background-color: var(--accent-color);
   color: var(--main-bg-color);
 }
@@ -222,6 +225,9 @@ footer a{
 
 @media screen and (min-width:768px){
   main.container{
+    max-width:900px;
+  }
+  footer{
     max-width:900px;
   }
   #about {

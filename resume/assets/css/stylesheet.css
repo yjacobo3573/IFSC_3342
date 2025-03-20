@@ -32,7 +32,7 @@ body{
 main.container{
   max-width:420px;
   margin: 0 auto;
-  padding:20px;
+
   background: var(--main-bg-color);
 }
 
@@ -68,7 +68,9 @@ h2{
   text-align:center;
   margin-top:20px;
 }
-
+nav{
+  padding:10px;
+}
 nav ul {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -219,17 +221,23 @@ footer a{
   
 }
 
+#copyright{
+  font-weight: bold;
+}
 
+#professional-stats{
+  padding:20px;
+}
 /*----Media Queries----*/
 
 
 
 @media screen and (min-width:768px){
   main.container{
-    max-width:900px;
+    max-width:932px;
   }
   footer{
-    max-width:900px;
+    max-width:932px;
   }
   #about {
     display: grid;
@@ -268,9 +276,13 @@ footer a{
   
 }
 
-@media screen and(min-width:992px){
+@media screen and (min-width:992px){
   main.container{
-  max-width: 1800px;
+  max-width: 1140px;
+  }
+
+  footer{
+    max-width: 1140px;
   }
 
 }

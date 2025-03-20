@@ -244,8 +244,6 @@ footer a{
     grid-template-columns: 2.5fr 3fr;
     grid-template-areas:
     "bio-summary details";
-    
-    
   }
 
   .bio-summary{

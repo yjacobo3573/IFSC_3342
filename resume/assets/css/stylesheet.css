@@ -24,8 +24,11 @@ body{
   
 }
   
-
+/*----all anchor links scroll smoothly----*/
+html {
+  scroll-behavior: smooth;
   
+}
   
 
 /*----Utility Classes---*/

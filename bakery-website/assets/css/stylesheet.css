@@ -1,11 +1,18 @@
-/*----Box Sizing ----*/
-html {
+/* ----Box Sizing ---- */
+/* html {
     box-sizing: border-box;
   }
   *, *:before, *:after {
     box-sizing: inherit;
     margin:0;
     padding:0;
+  } */
+
+  @media (min-width: 992px) {
+    .carousel-inner img {
+      width: 70% !important;
+      margin: 0 auto; 
+    }
   }
 
   

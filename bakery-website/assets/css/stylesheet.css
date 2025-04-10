@@ -7,11 +7,12 @@
     margin:0;
     padding:0;
   } */
-
-  @media (min-width: 992px) {
-    .carousel-inner img {
+  
+  
+  @media (min-width: 967px) {
+    .carousel-img {
       width: 70% !important;
-      margin: 0 auto; 
+      margin: 0 auto; /* center the image */
     }
   }
 

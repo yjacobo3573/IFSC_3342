@@ -9,11 +9,12 @@
   } */
   
   
-  @media (min-width: 967px) {
-    .carousel-img {
+    @media (min-width: 992px) {
+     #carouselExampleAutoplaying{
       width: 70% !important;
-      margin: 0 auto; /* center the image */
-    }
-  }
+      margin: 0 auto;  
+      }
+      
+     }
 
   

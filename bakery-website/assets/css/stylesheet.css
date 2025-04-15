@@ -10,11 +10,23 @@
   
   
     @media (min-width: 992px) {
-     #carouselExampleAutoplaying{
+     #carouselWelcome{
       width: 70% !important;
       margin: 0 auto;  
       }
       
      }
+
+     .text-center p{
+      margin-bottom: 0;
+     }
+
+  a{
+    color:white;
+  }
+
+  .navbar-brand img{
+    max-width: 60px;
+  }
 
   

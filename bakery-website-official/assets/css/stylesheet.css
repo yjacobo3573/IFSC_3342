@@ -1,0 +1,17 @@
+/* ----Box Sizing ---- */
+html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin:0;
+    padding:0;
+  }
+
+  :root{
+    --primary-color:#F1DED2;
+    --secondary-color: #412210;
+    --accent-color: #F584A9;
+    --navmenu-color:#ffffff;
+  }

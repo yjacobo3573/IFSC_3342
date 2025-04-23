@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Official Bakery Website, Sweet Delights</title>
     <link rel="stylesheet" href="assets/css/stylesheet.css" media="screen" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <nav>
+  <button id="open-sidebar-button" onclick="openSidebar()">
+    <i class="fas fa-hamburger"></i>
+  </button>
+    <nav id="navbar">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><button id="close-sidebar-button" onclick="closeSidebar()"></button></li>
+        <li class="home-li"><a class="active-link" href="index.html">Home</a></li>
         <li><a href="index.html">Menu</a></li>
         <li><a href="index.html">Profile</a></li>
       </ul>

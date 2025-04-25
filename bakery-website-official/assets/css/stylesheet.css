@@ -57,7 +57,7 @@ html {
   }
 
   #open-sidebar-button{
-    display:block;
+    display:none;
     background:none;
     border:none;
     padding:1em;
@@ -66,6 +66,7 @@ html {
   }
 
   #close-sidebar-button{
+    display:none;
     background: none;
     border: none;
     padding: 1em;
@@ -77,7 +78,132 @@ html {
     color: var(--accent-color);
   }
 
+  i.fa-solid.fa-x{
+    font-size: 1.5rem;
+    color: var(--accent-color);
+  }
+
+  #overlay{
+    background:rgba(0,0,0,0.5);
+    position: fixed;
+    inset:0;
+    z-index:9;
+    display:none;
+  }
+
+  main.container{
+    max-width: 960px;
+    width:80vw;
+    margin: 20px auto;
+  }
+
+  /*--slideshow container--*/
+   .slideshow-container{
+    text-align: center;
+    position: relative;
+    width:100%;
+    margin-top:60px;
+  }
+  /*--slideshow images--*/
+  .slideshow-image {
+    width:100%;
+   
+  }
+  /*--slideshow info container--*/
+  .slides {
+    display: none; /* Hide the images by default */
+  }
+
+  /* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -10px;
+  padding: 16px;
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 3rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+i.fa-solid.fa-arrow-left, i.fa-solid.fa-arrow-right{
+  box-shadow: 0 0 30px rgba(245, 132, 169, 0.6);
+  background-color: var(--accent-color);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(245, 132, 169, 0.6);
+}
+
+/* Number text (1/4 etc) */
+.numbertext{
+  color:black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* the dots/bullets/indicators */
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: var(--accent-color);
+}
+div.dots-container{
+    text-align: center;
+  }
+
+  /*--fade in and out animation--*/
+  .fade {
+    animation: fade 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+  section.trending-items{
+    margin-top: 70px;
+  }
+
+  /*--responsive design--*/
+
   @media screen and (max-width:700px){
+    #open-sidebar-button{
+      display: block;
+    }
+    #close-sidebar-button{
+      display: block;
+    }
     nav{
      position: fixed;
      top:0;
@@ -86,19 +212,24 @@ html {
      width: min(15em, 100%);
      z-index: 10;
      border-left: 1px solid var(--accent-color);
-     
+     transition: right 600ms ease-out;
+
     }
     nav.show{
       right:0;
       transition: right 300ms ease-out;
     }
+    nav.show ~ #overlay{
+      display: block;
+    }
     nav ul{
-      width: 100px;
+      width: 100%;
       flex-direction: column;
     }
     nav a{
       width: 100%;
-      padding-left: 2.5em;
+      display: block;
+      padding:2.5em;
     }
     nav a.active-link{
       border-bottom: none;

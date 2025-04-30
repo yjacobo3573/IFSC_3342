@@ -10,20 +10,24 @@
     
 </head>
 <body>
+  <header>
   <button id="open-sidebar-button" onclick="openSidebar()">
     <i class="fas fa-hamburger"></i>
   </button>
+   
     <nav id="navbar">
-      
       <ul>
         <li><button id="close-sidebar-button" onclick="closeSidebar()"><i class="fa-solid fa-x"></i></button></li>
+        <img src="assets/img/sweet-delights-logo.png" class="logo" alt="Bakery Logo">
         <li class="home-li"><a class="active-link" href="index.html">Home</a></li>
+        
         <li><a href="index.html">Menu</a></li>
         <li><a href="index.html">Profile</a></li>
       </ul>
     </nav>
     <div id="overlay" onclick="closeSidebar()"></div>
-
+  </header>
+  
     <main class="container">
       <section class="slideshow-container">
        
@@ -104,12 +108,18 @@
     <h2>Special Events</h2>
     <div class="events-container">
       <div class="event-img">
-        <img src="assets/img/baking-event-poster.jpeg" alt="Birthday Party image">
+        <img src="assets/img/baking-event-poster.jpeg" alt="Bakery event poster">
       </div>
-        <div class="event-form">
-          <h4>Birthday Party</h4>
-          <p>Make your birthday special with our custom cakes and treats.</p>
-        </div>
+      <form class="event-form">
+        <h3>Sign Up</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" placeholder="ex. Jane Doe" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="user_email" placeholder="ex." required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="user_phone" placeholder="ex. 123-456-7890" required>
+        <button type="submit" class="submit">Sign Up</button>
+      </form>
     </div>
    </section>
 

@@ -205,7 +205,7 @@ section.trending-items{
 
 section.trending-items h2{
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .card{
   margin-bottom:20px;
@@ -225,14 +225,14 @@ section.trending-items h2{
 }
 
 
-
-
 div.items-container{
   --auto-grid-min-size: 14rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
   grid-gap: 2rem;
 }
+
+
 div.wrapper-items{
   margin: 0 auto;
   padding:0 1rem;
@@ -240,16 +240,22 @@ div.wrapper-items{
 
 .special-events{
   text-align: center;
+  margin-top:70px;
+}
+
+.special-events h2{
+  
+  margin-bottom: 25px;
 }
 form.event-form{
 background-color: var(--accent-color);
 margin: 0 auto;
-width: 50%;
+width: 70%;
 padding:2rem;
 }
 
 .event-img img{
-  width:50%;
+  width:70%;
  }
 
  label{
@@ -264,17 +270,26 @@ padding:2rem;
   padding: 1rem;
   border: none;
   border-radius: 5px;
+  margin-top:15px;
+  font-weight: bold;
+  box-shadow: 0 9px 19px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+button.submit:hover{
+  background-color: var(--secondary-color);
+  color: white;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"]{
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 0.5rem 0;
   border: none;
   border-radius: 5px;
-  font-size:1.1rem;
+  font-size:1rem;
 }
 
  .logo-small-container{
@@ -284,7 +299,7 @@ input[type="tel"]{
 
 /*--responsive design--*/
 
-@media screen and (max-width:700px){
+@media screen and (max-width:768px){
   #open-sidebar-button{
     display: block;
   }
@@ -352,6 +367,30 @@ input[type="tel"]{
   header{
     background-color: var(--secondary-color);
   }
-
- 
 }
+
+  @media screen and ( min-width:780px ){
+    .events-container{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      
+    }
+      
+      .event-img img, .event-img{
+        width:100%;
+      }
+      form.event-form{
+        width: 100%;
+        height:99.1%;
+      }
+    }
+
+   @media screen and (min-width:1163px){
+    form.event-form{
+      width: 100%;
+      height:99.4%;
+     
+    }
+
+   }
+ 

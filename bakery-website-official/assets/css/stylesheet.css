@@ -296,6 +296,16 @@ input[type="tel"]{
   display:none;
 }
 
+.bakery-video{
+ text-align: center;
+ margin-top:70px;
+}
+
+video{
+  width: 90%;
+}
+
+
 
 /*--responsive design--*/
 

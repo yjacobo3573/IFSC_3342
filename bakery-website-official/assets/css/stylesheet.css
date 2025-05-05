@@ -75,8 +75,9 @@ nav a.active-link{
 }
 
 i.fas.fa-hamburger{
-  font-size: 3rem;
+  font-size: 2.9rem;
   color: var(--accent-color);
+  
 }
 
 i.fa-solid.fa-x{
@@ -85,7 +86,7 @@ i.fa-solid.fa-x{
 }
 
 img.logo{
-  width:65px;
+  width:70px;
   margin-left:30px;
   padding:5px;
 }
@@ -213,6 +214,7 @@ section.trending-items h2{
   transition: 0.3s;
   background-color: white;
   padding:20px;
+  
 }
 
 
@@ -230,6 +232,7 @@ div.items-container{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
   grid-gap: 2rem;
+  
 }
 
 
@@ -302,7 +305,7 @@ input[type="tel"]{
 }
 
 video{
-  width: 90%;
+  width: 100%;
 }
 
 h2.bakery-vid-header{
@@ -374,13 +377,13 @@ img.footer-map{
 
    .logo-small-container{
     display: block;
-    width:50px;
+    width:70px;
     margin-top:-70px;
     padding:10px;
   }
   .logo-small{
     display: block;
-    width: 50px;
+    width: 70px;
    
   }
 
@@ -463,5 +466,17 @@ img.footer-map{
         display:block;
         margin-top: 40px;
       }
+
+     
     }
- 
+
+    @media screen and (max-width: 639px){
+      div.items-container{
+        padding:5rem
+      }
+
+      section.trending-items h2
+      {
+        margin-bottom:0px;
+      }
+    }

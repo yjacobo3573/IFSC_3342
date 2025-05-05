@@ -305,8 +305,52 @@ video{
   width: 90%;
 }
 
+h2.bakery-vid-header{
+  text-align: center;
+  margin-bottom: 25px;
+}
 
+footer{
+  background-color: var(--secondary-color);
+  padding-top:1rem;
+  text-align: center;
+  color:var(--navmenu-color);
+}
+.footer-container{
+  max-width: 1000px;
+  width:80vw;
+  margin: 0 auto;
+  
+}
 
+.footer-info{
+  margin-top:30px;
+}
+
+ footer a{
+  color:var(--navmenu-color);
+}
+
+ footer i{
+  padding:1rem;
+  font-size: 1.4rem;
+}
+.map-img-container{
+  margin-top: 70px;
+}
+
+img.footer-map{
+  width:80%;
+  margin: 0 auto;
+  display: block;
+}
+
+.social-media{
+  display:none;
+}
+.copyright p{
+  margin-top:30px;
+}
 /*--responsive design--*/
 
 @media screen and (max-width:768px){
@@ -400,7 +444,24 @@ video{
       width: 100%;
       height:99.4%;
      
+     }
+
     }
 
-   }
+    @media screen and (min-width:992px){
+      .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0rem;
+
+      }
+      .footer-info{
+        margin-top: 120px;
+      }
+
+      .social-media{
+        display:block;
+        margin-top: 40px;
+      }
+    }
  

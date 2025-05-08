@@ -472,11 +472,13 @@ img.footer-map{
 
     @media screen and (max-width: 639px){
       div.items-container{
-        padding:5rem
+        padding:1.5rem;
+        margin: 0 auto;
       }
 
       section.trending-items h2
       {
-        margin-bottom:0px;
+        margin:0px;
+        padding:0px;
       }
     }

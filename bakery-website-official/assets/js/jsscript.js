@@ -14,6 +14,9 @@ function closeSidebar(){
 let slideIndex = 1;
 showSlides(slideIndex);
 
+//auto-play every 5 seconds
+setInterval(() => plusSlides(1), 5000);
+
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
